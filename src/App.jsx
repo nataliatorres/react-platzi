@@ -7,12 +7,14 @@ import ToggleButton from './components/ToggleButton'
 import NameForm from './components/NameForm'
 import './App.css'
 import CounterWithEffect from './components/CounterWithEffect'
+import StyledCard from './components/StyledCard/StyledCard'
 
 function App() {
 
   const items = ["React", "JavaScript", "Vite"];
 
   return (
+    
     <section>
       <h1>Name Form</h1>
       <NameForm/>
@@ -27,6 +29,8 @@ function App() {
           ))
         }
       </ul>
+
+      <StyledCard/>
     </section>
   )
 }
