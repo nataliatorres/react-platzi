@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Card from './components/card'
+import Counter from './components/Counter'
+import ToggleButton from './components/ToggleButton'
 import './App.css'
 
 function App() {
@@ -10,7 +13,11 @@ function App() {
 
   return (
     <section>
-      <h1>Prueba, HOla Mundo</h1>
+      <h1>Title</h1>
+      <ToggleButton />
+      <Counter />
+      <Card title = "Card 1" description = "This is a description" />
+      <Card title = "Card 2" description = "The second card is a copy of the first one" />
       <ul>
         {
           items.map((item, index) => (
@@ -19,7 +26,6 @@ function App() {
         }
       </ul>
     </section>
-    
   )
 }
 
