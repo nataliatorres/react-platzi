@@ -8,6 +8,7 @@ import NameForm from './components/NameForm'
 import './App.css'
 import CounterWithEffect from './components/CounterWithEffect'
 import StyledCard from './components/StyledCard/StyledCard'
+import TailwindExample from './components/TailwindExample/TailwindExample'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     
     <section>
     <h1>Intro</h1>
+    <TailwindExample/>
     <StyledCard/>
       <h2>Name Form</h2>
       <NameForm/>
