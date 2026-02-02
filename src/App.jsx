@@ -16,7 +16,9 @@ function App() {
   return (
     
     <section>
-      <h1>Name Form</h1>
+    <h1>Intro</h1>
+    <StyledCard/>
+      <h2>Name Form</h2>
       <NameForm/>
       <ToggleButton/>
       <Counter/>
@@ -29,8 +31,6 @@ function App() {
           ))
         }
       </ul>
-
-      <StyledCard/>
     </section>
   )
 }
