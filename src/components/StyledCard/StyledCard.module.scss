@@ -1,5 +1,110 @@
-$primary: peachpuff; 
+$primary: peachpuff;
+$dark_green: #547443;
+$medium_green: #A2BF65;
+$light_green: #CADC92;
 
-.card {
-    background-color: $primary;
+h2 {
+    color: black;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h3 {
+    color: black;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    color: black;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.barlow-semibold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.milk-card-container {
+    width: 500px;
+    height: 100%;
+    background-color: white;
+}
+
+.title {
+    display: flex;
+    background: linear-gradient(rgba(137, 153, 117, 0.5), rgba(137, 153, 117, 0.5)), url("/images/cows-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title h1 {
+    padding-left: 10px;
+}
+
+.title figure {
+    margin: 0;
+
+    img {
+        position: relative;
+        top: 10%;
+        width: 100px;
+    }
+}
+
+.milk-initial-facts {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-style: none none dashed none;
+    border-color: $medium_green;
+}
+
+.column-one h2 {
+    border-style: none none dashed none;
+    border-color: $medium_green;
+    padding: 0 10px 0 10px;
+}
+
+.column-two {
+    display: flex;
+    flex-direction: column;
+    border-style: none none none dashed;
+    border-color: $medium_green;
+}
+
+.milk-transport {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-style: none none dashed none;
+    border-color: $medium_green;
+}
+
+.transport-one {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px 0 5px;
+}
+
+.transport-two {
+    padding: 0 5px 0 5px;
+    border-style: none none none dashed;
+    border-color: $medium_green;
+}
+
+.milk-health {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.health-one {
+    padding: 0 5px 0 5px;
+}
+
+.health-two {
+    padding: 0 5px 0 5px;
+    border-style: none none none dashed;
+    border-color: $medium_green;
 }
