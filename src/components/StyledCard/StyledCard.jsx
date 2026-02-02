@@ -18,7 +18,7 @@ const StyledCard = () => {
             <section className={styles["milk-initial-facts"]}>
                 <div className={styles["column-one"]}>
                     <h2>94.2 Million in the US</h2>
-                    <p className={styles["barlow-semibold"]}> 30 million cows in Australia</p>
+                    <p> 30 million cows in Australia</p>
                 </div>
                 <div className={styles["column-two"]}>
                     <p>Drink 29 gallons per day</p>

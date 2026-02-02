@@ -3,65 +3,63 @@ $dark_green: #547443;
 $medium_green: #A2BF65;
 $light_green: #CADC92;
 
-.milk-card-container h2 {
-    color: black;
-    font-family: "Barlow", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.milk-card-container h3 {
-    color: black;
-    font-family: "Barlow", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-.milk-card-container p {
-    color: black;
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.barlow-semibold {
-  font-family: "Barlow", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
 .milk-card-container {
-    width: 500px;
+    width: 300px;
     height: 100%;
     background-color: white;
-}
 
+    h2 {
+        color: black;
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    h3 {
+        color: black;
+        font-family: "Barlow", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    p {
+        color: black;
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @media (min-width: 768px) {
+        width: 500px;
+    }
+}
 .title {
-    display: flex;
     background: linear-gradient(rgba(137, 153, 117, 0.5), rgba(137, 153, 117, 0.5)), url("/images/cows-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
+    figure {
+        margin: 0;
+        img {
+            position: relative;
+            width: 100px;
+        }
+    }
+    h1 {
+        margin-bottom: 0;
+    }
 
-.title h1 {
-    padding-left: 10px;
-}
+    @media (min-width: 768px) {
+        display: flex;
 
-.title figure {
-    margin: 0;
-
-    img {
-        position: relative;
-        top: 10%;
-        width: 100px;
+        h1 {
+            padding-left: 10px;
+        }
     }
 }
-
 .milk-initial-facts {
     display: grid;
     grid-template-columns: 1fr 2fr;
     border-style: none none dashed none;
     border-color: $medium_green;
 }
-
 .column-one h2 {
     border-style: none none dashed none;
     border-color: $medium_green;
@@ -71,6 +69,7 @@ $light_green: #CADC92;
 .column-two {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border-style: none none none dashed;
     border-color: $medium_green;
 }
@@ -99,12 +98,11 @@ $light_green: #CADC92;
     grid-template-columns: 2fr 1fr;
 }
 
-.health-one {
+.health-one, .health-two {
     padding: 0 5px 0 5px;
 }
 
 .health-two {
-    padding: 0 5px 0 5px;
     border-style: none none none dashed;
     border-color: $medium_green;
 }
