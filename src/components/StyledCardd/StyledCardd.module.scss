@@ -1,22 +1,41 @@
-//  @import "tailwindcss";
-
-// @tailwind base;
-// @tailwind components;
-// @tailwind utilities;
-
-// @layer base {
-//   p {
-//     @apply mb-4 text-gray-800;
-//   }
-// }
-
-
 $primary: peachpuff;
 $dark_green: #547443;
 $medium_green: #A2BF65;
 $light_green: #CADC92;
 
+.parent-container {
+    display: grid;
+    place-items: center;
+}
 
+.milk-card-container {
+    width: 300px;
+    height: 100%;
+    background-color: white;
+
+    h2 {
+        color: black;
+        font-family: "Barlow", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    h3 {
+        color: black;
+        font-family: "Barlow", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    p {
+        color: black;
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @media (min-width: 768px) {
+        width: 500px;
+    }
+}
 .title {
     background: linear-gradient(rgba(137, 153, 117, 0.5), rgba(137, 153, 117, 0.5)), url("/images/cows-header.jpg");
     background-size: cover;
@@ -46,7 +65,6 @@ $light_green: #CADC92;
     border-style: none none dashed none;
     border-color: $medium_green;
 }
-
 .column-one h2 {
     border-style: none none dashed none;
     border-color: $medium_green;
