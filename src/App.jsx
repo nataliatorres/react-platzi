@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/images/vite.svg'
-import Card from './components/card'
+import Card from './components/Card'
 import Counter from './components/Counter'
 import ToggleButton from './components/ToggleButton'
 import NameForm from './components/NameForm'
@@ -13,6 +13,7 @@ import StaticComponent from './components/StaticComponent/StaticComponent'
 import StyledCardd from './components/StyledCardd/StyledCardd'
 import NoAsAService from './components/NoAsAService/NoAsAService'
 import SearchData from './components/SearchData/SearchData'
+import CounterWithUseReact from './components/CounterWithUseReact/CounterWithUseReact'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
       <StaticComponent/>
       <NoAsAService/>
       <SearchData/>
+      <CounterWithUseReact/>
       <h1>Intro</h1>
       <TailwindExample/>
       <StyledCard/>

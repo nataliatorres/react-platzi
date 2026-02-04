@@ -37,7 +37,7 @@ const SearchData = () => {
         <div className="w-[100%] border-solid border-white-300 border-1 rounded-xl my-[50px] py-[10px]">
             <h1>Look for a post</h1>
             <div className="flex justify-center flex-wrap gap-[20px] my-[10px]">
-                <input className="border-solid border-white-300 border-1 rounded-lg my-[10px] px-[5px]" type="text"
+                <input className="border-solid border-white-300 border-1 rounded-lg my-[10px] px-[5px]"
                     type="text"
                     placeholder="Search by title"
                     value={input}
