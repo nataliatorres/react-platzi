@@ -41,8 +41,8 @@ const NoAsAService = () => {
     return (
         <div className="w-[100%] border-solid border-white-300 border-1 rounded-xl my-[50px] py-[10px]">
             <h1>Want to say no but don't know how?</h1>
-            <h2>Keep clicking until satisfied with an answer 🫣</h2>
-            <button onClick={fetchData}>Give me a reason</button>
+            <h2 className="mt-[10px]">Keep clicking until you find an answer that you like 🫣</h2>
+            <button className="my-[15px]" onClick={fetchData}>Give me a reason</button>
             {
                 <p className="font-bold">----&gt; {reasons.reason} &lt;----</p>
             }

@@ -12,16 +12,17 @@ import TailwindExample from './components/TailwindExample/TailwindExample'
 import StaticComponent from './components/StaticComponent/StaticComponent'
 import StyledCardd from './components/StyledCardd/StyledCardd'
 import NoAsAService from './components/NoAsAService/NoAsAService'
+import SearchData from './components/SearchData/SearchData'
 
 function App() {
 
   const items = ["React", "JavaScript", "Vite"];
 
   return (
-    
     <section>
       <StaticComponent/>
       <NoAsAService/>
+      <SearchData/>
       <h1>Intro</h1>
       <TailwindExample/>
       <StyledCard/>
