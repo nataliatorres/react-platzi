@@ -56,6 +56,7 @@ const SearchData = () => {
                     <p id={post.id}>{post.title}</p>
                 ))
             }
+            <p className="text-xs my-[10px]">I'm using <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a></p>
         </div>
     )
 }

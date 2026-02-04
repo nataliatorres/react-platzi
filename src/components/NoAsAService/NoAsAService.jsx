@@ -46,7 +46,7 @@ const NoAsAService = () => {
             {
                 <p className="font-bold">----&gt; {reasons.reason} &lt;----</p>
             }
-            <p className="text-sm">I'm using <a href="https://github.com/hotheadhacker/no-as-a-service">no-as-a-service</a></p>
+            <p className="text-xs my-[10px]">I'm using <a href="https://github.com/hotheadhacker/no-as-a-service">no-as-a-service</a></p>
         </div>
     )
 }
