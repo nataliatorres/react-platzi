@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { createContext, useContext, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/images/vite.svg'
 import Card from './components/Card'
@@ -15,6 +15,32 @@ import NoAsAService from './components/NoAsAService/NoAsAService'
 import SearchData from './components/SearchData/SearchData'
 import CounterWithUseReact from './components/CounterWithUseReact/CounterWithUseReact'
 
+const ThemeContext = createContext();
+
+function ThemeProvider({children}) {
+  const [theme, setTheme] = useState("light");
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"))
+  }
+
+  return (
+    <ThemeContext.Provider value={{ theme, toggleTheme}}>
+      {children}
+    </ThemeContext.Provider>
+  )
+}
+
+function ThemeButton() {
+  const {theme, toggleTheme} = useContext( ThemeContext );
+  
+  const activeStyle = theme === "light" ? "bg-white text-black" : "bg-black text-white";
+
+  return (
+    <button className={`${activeStyle}`} onClick={toggleTheme}>Change theme</button>
+  )
+
+}
+
 function App() {
 
   const items = ["React", "JavaScript", "Vite"];
@@ -25,6 +51,9 @@ function App() {
       <NoAsAService/>
       <SearchData/>
       <CounterWithUseReact/>
+      <ThemeProvider>
+        <ThemeButton/>
+      </ThemeProvider>
       <h1>Intro</h1>
       <TailwindExample/>
       <StyledCard/>

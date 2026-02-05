@@ -53,7 +53,7 @@ const SearchData = () => {
             </div>
             {
                 posts.map((post) => (
-                    <p id={post.id}>{post.title}</p>
+                    <p key={post.id} id={post.id}>{post.title}</p>
                 ))
             }
             <p className="text-xs my-[10px]">I'm using <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a></p>
