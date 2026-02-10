@@ -1,7 +1,11 @@
 import { useState } from "react";
 
 const Counter = () => {
-    const [count, setCount] = useState(0);
+    // JS
+    // const [count, setCount] = useState(0);
+
+    //TS
+    const [count, setCount] = useState<number>(0);
 
     return(
         <div>

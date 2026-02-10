@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useState, type ReactNode } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/images/vite.svg'
 import Card from './components/Card'
@@ -13,11 +13,17 @@ import StaticComponent from './components/StaticComponent/StaticComponent'
 import StyledCardd from './components/StyledCardd/StyledCardd'
 import NoAsAService from './components/NoAsAService/NoAsAService'
 import SearchData from './components/SearchData/SearchData'
-import CounterWithUseReact from './components/CounterWithUseReact/CounterWithUseReact'
+import CounterWithUseReducer from './components/CounterWithUseReducer/CounterWithUseReducer'
+import ButtonWithTS from './components/ButtonWithTS/ButtonWithTS'
 
-const ThemeContext = createContext();
+type ThemeContextType = {
+  theme: string;
+  toggleTheme: () => void;
+}
 
-function ThemeProvider({children}) {
+const ThemeContext = createContext<ThemeContextType>();
+
+function ThemeProvider({ children }: { children: React.ReactNode }): React.ReactNode {
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"))
@@ -41,16 +47,24 @@ function ThemeButton() {
 
 }
 
+// Typed function
+function greeting(name: string): string {
+  return `Hola ${name}`;
+}
+
 function App() {
 
   const items = ["React", "JavaScript", "Vite"];
+  const handleClick = () =>  alert ("Ya hiciste click");
+  console.log(greeting("Natalia"));
 
   return (
     <section>
       <StaticComponent/>
+      <ButtonWithTS onclick={handleClick} label="Click me"/>
       <NoAsAService/>
       <SearchData/>
-      <CounterWithUseReact/>
+      <CounterWithUseReducer/>
       <ThemeProvider>
         <ThemeButton/>
       </ThemeProvider>
